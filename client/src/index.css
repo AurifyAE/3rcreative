@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+
+
+@font-face {
+    font-family: 'AmericanTypewriter';
+    src: url('/fonts/AmericanTypewriter/AmericanTypewriter.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'jmhTypewriter';
+    src: url('/fonts/jmhTypewriter/JMH Typewriter-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'jmhTypewriter';
+    src: url('/fonts/jmhTypewriter/JMH Typewriter.ttf') format('truetype');
+    font-weight: 400;
+}
+/* @font-face {
+    font-family: 'AmericanTypewriter';
+    src: url('/fonts/AmericanTypewriter/AmericanTypewriter.ttf') format('truetype');
+    font-weight: 400;
+} */
+@font-face {
+    font-family: 'productSans';
+    src: url('/fonts/productSans/ProductSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'productSans';
+    src: url('/fonts/productSans/ProductSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@keyframes fade-once {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    10% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    90% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+.animate-fade-once {
+    animation: fade-once 2.5s ease-in-out forwards;
+}
