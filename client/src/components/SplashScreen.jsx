@@ -5,16 +5,19 @@ import hamburger from '../assets/hamburger.svg'
 import logoName from '../assets/logoName.svg'
 import bgVideo from '../assets/bgVideo.mp4'
 import FloatingText from './FloatingText'
+import SliderMenu from './SliderMenu'
+
 
 export default function SplashScreen() {
     const navigate = useNavigate();
     const allowScroll = useRef(false);
     const [fadeOut, setFadeOut] = useState(false)
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     useEffect(() => {
         const timer = setTimeout(() => {
             allowScroll.current = true;
-        }, 4000); // delay for 4 seconds
+        }, 3000); // delay for 3 seconds
 
         const handleScroll = () => {
             if (allowScroll.current) {
@@ -45,7 +48,10 @@ export default function SplashScreen() {
             >
                 <source src={bgVideo} type="video/mp4" />
             </video>
-            <img src={hamburger} alt="" className='absolute right-16 top-10 z-10' />
+            <button onClick={() => setIsMenuOpen(true)}>
+                <img src={hamburger} alt="" className='absolute right-16 top-10 z-10 cursor-pointer' />
+            </button>
+            <SliderMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
             <img src={logo} alt="3R Logo" className='z-10' />
             <div className='relative z-10 space-y-2'>
                 <img src={logoName} alt="Creative" className='z-10 ' />

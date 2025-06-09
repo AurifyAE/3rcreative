@@ -6,11 +6,10 @@ import Card from './Card';
 const cards = ['Card 1', 'Card 2', 'Card 3', 'Card 4', 'Card 5'];
 
 export default function ServiceCarousel() {
-
     return (
-            <Swiper
+        <Swiper
             slidesPerView={1} // Default for mobile
-            spaceBetween={2}
+            spaceBetween={20}
             loop={true}
             speed={5000}
             autoplay={{
@@ -22,24 +21,24 @@ export default function ServiceCarousel() {
                 // For tablet
                 640: {
                     slidesPerView: 2,
-                    spaceBetween: 2,
+                    spaceBetween: 20,
                 },
                 // For desktop
                 1024: {
                     slidesPerView: 3,
-                    spaceBetween: 1,
+                    spaceBetween: 20,
                 },
             }}
             modules={[Autoplay]}
-            className="p-2 w-screen -ml-4 sm:-ml-8 md:-ml-15"
-            >
-                {cards.map((card, index) => (
-                    <SwiperSlide key={index} className="pt-8 sm:pt-12 md:pt-16 w-auto">
-                        <div className="flex items-center justify-center">
-                            <Card id={index} />
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+            className="w-full"
+        >
+            {cards.map((card, index) => (
+                <SwiperSlide key={index} className="pt-8 sm:pt-12 md:pt-16">
+                    <div className="flex items-center justify-center">
+                        <Card id={index} />
+                    </div>
+                </SwiperSlide>
+            ))}
+        </Swiper>
     );
-};
+}

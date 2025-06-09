@@ -14,7 +14,7 @@ const contents =[
         id: 2,
         heading: "Refine",
         subHeading: "Value: Excellence & Craftsmanship",
-        paragraph: "You're obsessed with the details. Whether it’s branding, digital experiences, or strategic consultancy, your approach is always polished, thoughtful, and premium—no fluff, just solid, beautiful work with high standards."
+        paragraph: "You're obsessed with the details. Whether it's branding, digital experiences, or strategic consultancy, your approach is always polished, thoughtful, and premium—no fluff, just solid, beautiful work with high standards."
     },
     {
         id: 3,
@@ -26,28 +26,28 @@ const contents =[
 
 export default function About() {
     return (
-        <div className=' px-36 pt-20'>
-            <h1 className='font-[jmhTypewriter] font-black text-5xl'>Why Choose 3RCreative?</h1>
-            <p className='font-[productSans]'>We're more than a creative agency. We are your brand custodians, working tirelessly to:</p>
-            <div className='relative flex flex-col gap-30 py-20'>
+        <div className='px-6 sm:px-10 md:px-16 lg:px-36 pt-8 sm:pt-10 md:pt-16 lg:pt-20'>
+            <h1 className='font-[jmhTypewriter] font-black text-3xl sm:text-4xl md:text-4xl lg:text-5xl'>Why Choose 3RCreative?</h1>
+            <p className='font-[productSans] text-sm sm:text-base md:text-base lg:text-lg'>We're more than a creative agency. We are your brand custodians, working tirelessly to:</p>
+            <div className='relative flex flex-col gap-8 sm:gap-10 md:gap-16 lg:gap-30 py-8 sm:py-10 md:py-16 lg:py-20'>
 
-                <img src={curlyarrow1} alt="" className='absolute right-70 top-10' />
-                <img src={curlyarrow2} alt="" className='absolute top-100 left-50' />
-                <img src={curlyarrow3} alt="" className='absolute bottom-10 right-70' />
+                <img src={curlyarrow1} alt="" className='hidden md:block absolute right-5 top-25 lg:right-70 lg:top-10 w-24 md:w-32 lg:w-auto' />
+                <img src={curlyarrow2} alt="" className='hidden md:block absolute top-110 left-10 lg:top-100 lg:left-50 w-24 md:w-32 lg:w-auto' />
+                <img src={curlyarrow3} alt="" className='hidden md:block absolute bottom-25 lg:bottom-10 right-10 lg:right-70 w-24 md:w-32 lg:w-auto' />
 
                 {contents.map((content, index) => (
-                    <div className={`w-5/12 flex items-center gap-8 ${index % 2 === 0 ? 'self-start' : 'self-end'}`} key={content.id}>
-                        <h1 className={`font-[jmhTypewriter] text-9xl ${
+                    <div className={`w-full md:w-7/12 lg:w-5/12 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 lg:gap-8 ${index % 2 === 0 ? 'md:self-start' : 'md:self-end'}`} key={content.id}>
+                        <h1 className={`font-[jmhTypewriter] text-5xl sm:text-6xl md:text-7xl lg:text-9xl ${
                                 content.id === 1
                                 ? 'text-[#E76F51]'
                                 : content.id === 2
                                 ? 'text-[#F4A261]'
                                 : 'text-[#299D8F]'
                             }`}>0{content.id}</h1>
-                        <div className='space-y-5'>
-                            <h1 className='font-[jmhTypewriter] text-5xl'>{content.heading}</h1>
-                            <h4 className='font-[productSans] font-bold'>{content.subHeading}</h4>
-                            <p className='font-[productSans]'>{content.paragraph}</p>
+                        <div className='space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5'>
+                            <h1 className='font-[jmhTypewriter] text-xl sm:text-2xl md:text-3xl lg:text-5xl'>{content.heading}</h1>
+                            <h4 className='font-[productSans] font-bold text-sm sm:text-base md:text-base lg:text-lg'>{content.subHeading}</h4>
+                            <p className='font-[productSans] text-sm sm:text-base md:text-base lg:text-lg'>{content.paragraph}</p>
                         </div>
                     </div>
                 ))}

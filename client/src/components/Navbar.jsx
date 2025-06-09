@@ -2,13 +2,15 @@ import React, { useState } from 'react'
 import logo from '../assets/navLogo.svg'
 import hamburger from '../assets/hamburger.svg'
 import { Link, useNavigate } from 'react-router-dom'
+import SliderMenu from './SliderMenu'
 
 export default function Navbar() {
     const [selected, setSelected] = useState('home') // default selected
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
     const navigate = useNavigate();
 
     return (
-        <div className='flex justify-between items-center bg-black text-white py-4 px-5 md:px-15 lg:px-40'>
+        <div className='flex justify-between items-center bg-black text-white py-4 px-8 md:px-13 lg:px-26'>
             <Link to="/" >
                 <img src={logo} alt="3r creative logo" className='w-35 md:w-50' />
             </Link>
@@ -59,8 +61,11 @@ export default function Navbar() {
                 </button>
             </div>
             <div className='block lg:hidden'>
-            <img src={hamburger} alt="" />
+                <button onClick={() => setIsMenuOpen(true)}>
+                    <img src={hamburger} alt="Menu" className='w-6 md:w-10' />
+                </button>
             </div>
+            <SliderMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
         </div>
     )
 }
