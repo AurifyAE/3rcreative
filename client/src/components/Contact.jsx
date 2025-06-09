@@ -38,7 +38,7 @@ export default function Contact() {
         <div id='contact' className='relative w-full min-h-[1400px] md:min-h-[1600px] mt-0 md:mt-20'>
             <img src={mailFront} alt="" className='w-12/12 md:w-11/12 lg:w-9/12 absolute -bottom-20 lg:-bottom-110 left-1/2 -translate-x-1/2 z-30' />
             <img src={mailBack} alt="" className='w-12/12 md:w-11/12 lg:w-9/12 absolute -bottom-20 lg:-bottom-110 left-1/2 -translate-x-1/2 z-10' />
-            <div className={`absolute top-20 md:top-0 lg:top-55 left-1/2 -translate-x-1/2 bg-[#FFF7E3] font-[jmhTypewriter] w-11/12 md:w-10/12 lg:w-8/12 h-full rounded-[30px] md:rounded-[60px] shadow-2xl flex flex-col items-center justify-center gap-6 md:gap-10 px-6 md:px-10 lg:px-25 py-0 md:py-20 z-20 transition-transform duration-700 ease-in-out ${submitted ? "-translate-y-50" : ""}`}>
+            <div className={`absolute top-20 md:top-10 lg:top-51 left-1/2 -translate-x-1/2 bg-[#FFF7E3] font-[jmhTypewriter] w-11/12 md:w-10/12 lg:w-8/12 h-full rounded-[30px] md:rounded-[60px] shadow-2xl flex flex-col items-center justify-center gap-6 md:gap-10 px-6 md:px-10 lg:px-25 py-0 md:py-20 z-20 transition-transform duration-700 ease-in-out ${submitted ? "-translate-y-50" : ""}`}>
                 <h2 className='w-full md:w-120 font-bold text-xl md:text-2xl text-center'>Let us help you tell your story — the way it deserves to be told</h2>
                 <img src={byeIcon} alt="" className='w-16 md:w-auto' />
                 <form className='space-y-4 md:space-y-6 w-full'>
@@ -150,7 +150,7 @@ export default function Contact() {
                         </div>
                     </div>
                 </form>
-                <div className='w-full md:w-2/3 text-center mx-auto mt-32 md:mt-64'>
+                <div className='w-full md:w-2/3 text-center mx-auto mt-32 md:mt-56 lg:mt-72'>
                     <h2 className='text-[#299D8F] text-2xl md:text-3xl font-bold'>Thanks a ton!</h2>
                     <p className='text-base md:text-lg font-bold'>We're thrilled to connect and can't wait to work together.</p>
                 </div>
