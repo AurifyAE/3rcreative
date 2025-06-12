@@ -7,7 +7,7 @@ export default function SliderMenu({ isOpen, onClose }) {
         { name: 'Home', path: '/home' },
         { name: 'About Us', action: () => document.getElementById('highlights').scrollIntoView({ behavior: 'smooth' }) },
         { name: 'Services', path: '/services' },
-        { name: "Let's Chat", action: () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }) }
+        { name: "Let's Chat", path: '/contact' }
     ];
 
     return (

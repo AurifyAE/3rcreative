@@ -62,22 +62,22 @@ export default function Footer() {
             {/* Social Media Icons */}
             <ul className="flex flex-row md:flex-col items-center justify-center gap-4 md:gap-3">
               <li>
-                <a href="https://www.facebook.com/Creative3R" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                <a href="https://www.facebook.com/3rcreative" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <img src={facebook} alt="Facebook" className="w-6 h-6" />
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/creative3r/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                <a href="https://www.instagram.com/3r_creative" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <img src={instagram} alt="Instagram" className="w-6 h-6" />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/company/creative3r/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                <a href="https://www.linkedin.com/company/3rcreative" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <img src={telegram} alt="Telegram" className="w-6 h-6" />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/company/creative3r/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                <a href="https://www.linkedin.com/company/3rcreative" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                   <img src={youtube} alt="YouTube" className="w-6 h-6" />
                 </a>
               </li>

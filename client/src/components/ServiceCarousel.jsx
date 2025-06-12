@@ -2,8 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import Card from './Card';
+import cardsData from '../data/cardsData';
 
-const cards = ['Card 1', 'Card 2', 'Card 3', 'Card 4', 'Card 5'];
 
 export default function ServiceCarousel() {
     return (
@@ -32,10 +32,10 @@ export default function ServiceCarousel() {
             modules={[Autoplay]}
             className="w-full"
         >
-            {cards.map((card, index) => (
-                <SwiperSlide key={index} className="pt-8 sm:pt-12 md:pt-16">
+            {cardsData.map((card) => (
+                <SwiperSlide key={card.id} className="pt-8 sm:pt-12 md:pt-16">
                     <div className="flex items-center justify-center">
-                        <Card id={index} />
+                        <Card card={card} />
                     </div>
                 </SwiperSlide>
             ))}

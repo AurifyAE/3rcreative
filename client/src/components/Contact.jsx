@@ -27,7 +27,28 @@ export default function Contact() {
     const [submitted, setSubmitted] = useState(false);
 
     const handleSubmit = () => {
+        const emailSubject = 'New Contact Form Submission from 3R Creative Website';
+        const emailBody = `
+        Name: ${formData.name}
+        Email: ${formData.email}
+        Phone: ${formData.phone}
+        Company: ${formData.company}
+        Project Details: ${formData.project}
+        How they heard about us: ${formData.referral}
+                `;
+
+        const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=info@creative3r.com&su=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+        window.open(gmailLink, '_blank');
+
         setSubmitted(true);
+        setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            company: "",
+            project: "",
+            referral: "",
+        });
 
         setTimeout(() => {
             setSubmitted(false);
@@ -52,6 +73,7 @@ export default function Contact() {
                         </label>
                         <input
                             id="name"
+                            name="name"
                             type="text"
                             value={formData.name}
                             onChange={handleChange}
@@ -66,6 +88,7 @@ export default function Contact() {
                         </label>
                         <input
                             id="email"
+                            name="email"
                             type="email"
                             value={formData.email}
                             onChange={handleChange}
@@ -80,6 +103,7 @@ export default function Contact() {
                         </label>
                         <input
                             id="phone"
+                            name="phone"
                             type="tel"
                             value={formData.phone}
                             onChange={handleChange}
@@ -94,6 +118,7 @@ export default function Contact() {
                         </label>
                         <input
                             id="company"
+                            name="company"
                             type="text"
                             value={formData.company}
                             onChange={handleChange}
@@ -108,6 +133,7 @@ export default function Contact() {
                         </label>
                         <input
                             id="project"
+                            name="project"
                             type="textarea"
                             value={formData.project}
                             onChange={handleChange}
@@ -120,7 +146,7 @@ export default function Contact() {
                         <label className="w-full md:w-1/3 text-[#1C1A1A] tracking-wider font-bold block mb-1">
                             How did you hear about us?
                         </label>
-                        <div className='w-full md:w-2/3'>
+                        <div className='w-full'>
                             <p className="text-[#666464] text-[11px] lg:text-xs font-[productSans] mb-4">
                                 We always love hearing how good people find us!
                             </p>
@@ -157,8 +183,8 @@ export default function Contact() {
             </div>
             <button 
             onClick={handleSubmit}
-            className='bg-[#E9C369] w-48 md:w-56 h-14 md:h-16 flex justify-center items-center gap-4 rounded-2xl font-[productSans] text-base md:text-lg font-bold text-white absolute -bottom-5 lg:-bottom-60 left-1/2 -translate-x-1/2 z-40 hover:bg-[#F4A261] transition-colors duration-300 shadow-inner cursor-pointer'>
-                <img src={sendIcon} alt="" className='w-6 h-6 md:w-7 md:h-7' />
+            className='bg-[#E9C369] w-40 md:w-48 lg:w-56 h-12 md:h-14 flex justify-center items-center gap-4 rounded-2xl font-[productSans] text-base md:text-lg md:font-bold text-white absolute -bottom-5 md:bottom-5 lg:-bottom-60 left-1/2 -translate-x-1/2 z-40 hover:bg-[#F4A261] transition-colors duration-300 shadow-inner cursor-pointer'>
+                <img src={sendIcon} alt="" className='w-5 h-5 md:w-7 md:h-7' />
                 Just Send
             </button>
             <img src={rainbowLine} alt="" className='absolute -bottom-40 md:-bottom-50 lg:-bottom-139 w-full' />

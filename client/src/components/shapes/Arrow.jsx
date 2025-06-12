@@ -4,7 +4,7 @@ const Arrow = () => {
     return (
         <motion.div
         style={{ rotate: '-6deg' }} // Always tilted to the right
-        whileHover={{ x: [0, 20, -20, 0] }} // Only move on hover
+        whileHover={{ x: [0, 20, -20, 0] }} // Move on hover for desktop
         transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         className="w-[400px] h-[200px] md:w-[500px] md:h-[250px] cursor-pointer font-[productSans] font-bold text-center"
         >

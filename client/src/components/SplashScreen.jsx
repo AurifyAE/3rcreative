@@ -49,13 +49,13 @@ export default function SplashScreen() {
                 <source src={bgVideo} type="video/mp4" />
             </video>
             <button onClick={() => setIsMenuOpen(true)}>
-                <img src={hamburger} alt="" className='absolute right-16 top-10 z-10 cursor-pointer' />
+                <img src={hamburger} alt="" className='absolute right-8 md:right-16 top-8 md:top-10 z-10 cursor-pointer w-6 md:w-auto' />
             </button>
             <SliderMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
-            <img src={logo} alt="3R Logo" className='z-10' />
-            <div className='relative z-10 space-y-2'>
-                <img src={logoName} alt="Creative" className='z-10 ' />
-                <h4 className='absolute font-[AmericanTypewriter] font-normal text-xl text-neutral-500 z-10 right-0 tracking-widest'>A DIGITAL AGENCY</h4>
+            <img src={logo} alt="3R Logo" className='z-10 w-32 md:w-auto' />
+            <div className='relative z-10 space-y-2 px-4 md:px-0'>
+                <img src={logoName} alt="Creative" className='z-10 w-48 md:w-auto' />
+                <h4 className='absolute font-[AmericanTypewriter] font-normal text-sm md:text-xl text-neutral-500 z-10 right-0 tracking-widest'>A DIGITAL AGENCY</h4>
             </div>
             <FloatingText />
         </div>

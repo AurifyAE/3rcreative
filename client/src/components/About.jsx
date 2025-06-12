@@ -1,4 +1,5 @@
 import React from 'react'
+import arrow from '../assets/arrow.gif'
 import curlyarrow1 from '../assets/curlyarrow1.svg'
 import curlyarrow2 from '../assets/curlyarrow2.svg'
 import curlyarrow3 from '../assets/curlyarrow3.svg'
@@ -31,9 +32,9 @@ export default function About() {
             <p className='font-[productSans] text-sm sm:text-base md:text-base lg:text-lg'>We're more than a creative agency. We are your brand custodians, working tirelessly to:</p>
             <div className='relative flex flex-col gap-8 sm:gap-10 md:gap-16 lg:gap-30 py-8 sm:py-10 md:py-16 lg:py-20'>
 
-                <img src={curlyarrow1} alt="" className='hidden md:block absolute right-5 top-25 lg:right-70 lg:top-10 w-24 md:w-32 lg:w-auto' />
-                <img src={curlyarrow2} alt="" className='hidden md:block absolute top-110 left-10 lg:top-100 lg:left-50 w-24 md:w-32 lg:w-auto' />
-                <img src={curlyarrow3} alt="" className='hidden md:block absolute bottom-25 lg:bottom-10 right-10 lg:right-70 w-24 md:w-32 lg:w-auto' />
+                <img src={arrow} alt="" className='hidden md:block absolute right-5 top-25 lg:right-70 lg:top-20 w-24 md:w-32 lg:w-50' />
+                <img src={arrow} alt="" className='hidden md:block absolute top-105 left-10 lg:top-120 lg:left-50 w-24 md:w-32 lg:w-50 transform scale-x-[-1]' />
+                <img src={arrow} alt="" className='hidden md:block absolute bottom-25 lg:bottom-30 right-10 lg:right-70 w-24 md:w-32 lg:w-50' />
 
                 {contents.map((content, index) => (
                     <div className={`w-full md:w-7/12 lg:w-5/12 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 lg:gap-8 ${index % 2 === 0 ? 'md:self-start' : 'md:self-end'}`} key={content.id}>
