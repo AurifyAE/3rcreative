@@ -1,5 +1,5 @@
 import React from 'react'
-import hero from '../assets/heroImage.png'
+import hero from '../assets/hero.jpg'
 import blurLayer from '../assets/blurlayer.svg'
 import parallelLines from '../assets/parallel.svg'
 import serviceIcon from '../assets/btn-icon.svg'
