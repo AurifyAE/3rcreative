@@ -10,13 +10,12 @@ import { Link } from 'react-router-dom'
 import ServiceCarousel from './ServiceCarousel'
 import { useEffect, useState, useRef } from "react";
 
-
-
 export default function Hero() {
     const fullText = "Your real story is your brand.\nWe are here to ensure it's authentic, right, and connecting.";
     const [text, setText] = useState("");
     const [index, setIndex] = useState(0);
     const [start, setStart] = useState(false);
+    const [imageLoaded, setImageLoaded] = useState(false);
     const textRef = useRef();
 
     useEffect(() => {
@@ -46,10 +45,14 @@ export default function Hero() {
         }
     }, [start, index]);
 
-
     return (
         <div className='relative w-full overflow-hidden pb-32 md:pb-56'>
-            <img src={hero} alt="hero image" className='w-full h-full object-cover' />
+            <img 
+                src={hero} 
+                alt="hero image" 
+                className={`w-full h-full object-cover transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                onLoad={() => setImageLoaded(true)}
+            />
             <img src={blurLayer} alt="" className='hidden md:block absolute top-0 z-1 md:h-5/12 lg:h-7/12 md:w-7/12 object-cover overflow-hidden' />
             <img src={arrow} alt="" className='hidden md:block md:absolute top-130 lg:top-120 left-[53%] lg:left-1/2 -translate-x-2/3 -translate-y-1/2 z-20 md:w-25 md:h-25 lg:w-50 lg:h-50' />
             <div className='w-5/6 md:w-5/12 lg:w-2/6 absolute top-40 md:top-40 left-10 md:left-20 lg:left-27 text-white space-y-6 z-[2]'>
