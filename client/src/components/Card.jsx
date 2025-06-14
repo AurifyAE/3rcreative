@@ -1,6 +1,5 @@
 import React from 'react'
 import paper from '../assets/paperpiece.svg'
-import branding from '../assets/branding.jpg'
 
 const colors = ["#299D8F", "#F4A261", "#E76F51"];
 
@@ -18,7 +17,7 @@ export default function Card({ card }) {
                     className='w-full h-full object-cover'
                 />
             </div>
-            <p className='text-white text-center text-xl md:text-2xl py-3 pl-2'>{card.title}</p>
+            <p className='text-white font-[poppins] text-center text-xl md:text-2xl py-3 pl-2'>{card.title}</p>
         </div>
     )
 }

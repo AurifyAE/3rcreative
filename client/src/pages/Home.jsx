@@ -13,7 +13,7 @@ export default function Home() {
 
     useEffect(() => {
         // Simulate a short delay
-        const timer = setTimeout(() => setLoading(false), 2000);
+        const timer = setTimeout(() => setLoading(false), 2500);
         return () => clearTimeout(timer);
     }, []);
 
@@ -21,7 +21,7 @@ export default function Home() {
 
 
     return (
-        <div className=''>
+        <div>
             <Hero />
             <About />
             <Services />

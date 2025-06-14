@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 // import "./BlurryAnimation.css";
 
 const circles = [
-  { color: "#E76F51", delay: 0, top: "10%", left: "5%" },
+  { color: "#E76F51", delay: 0, top: "15%", left: "10%" },
   { color: "#299D8F", delay: 2, top: "20%", left: "60%" },
   { color: "#E9C369", delay: 4, top: "70%", left: "30%" },
   { color: "#299D8F", delay: 1.5, top: "50%", left: "80%" },

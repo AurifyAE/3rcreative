@@ -38,8 +38,9 @@ const services = [
     {
         id: 1,
         title: "Branding &\n Identity Development",
+        subtitle: "Building Bold, Authentic Brands That Leave a Lasting Impression",
         description:
-        'At 3RCreative, we uncover your true brand essence, craft iconic designs, and build cohesive identities that resonate. From logo creation to full rebranding, we position you to stand out, stay consistent, and connect deeply with your audience.',
+        'We uncover your true brand essence, craft iconic designs, and build cohesive identities that resonate. From logo creation to full rebranding, we position you to stand out, stay consistent, and connect deeply with your audience.',
         types : [
             {
                 id: 1,
@@ -76,6 +77,7 @@ const services = [
     {
         id: 2,
         title: "Storytelling and Content Creation",
+        subtitle: "Transforming Brand Voices into Meaningful, Impact-Driven Narratives",
         description: "At 3RCreative, we turn your brand's voice into powerful stories that captivate and inspire. Through strategic content creation — from words to visuals — we craft narratives that build emotional connections, spark engagement, and drive lasting impact.",
         types : [
             {
@@ -107,7 +109,8 @@ const services = [
     {
         id: 3,
         title: "Digital Marketing",
-        description: "we amplify your brand's presence across digital landscapes with smart, data-driven strategies. From social media to SEO, we craft campaigns that spark engagement, build loyalty, and drive real growth.",
+        subtitle: "",
+        description: "We amplify your brand's presence across digital landscapes with smart, data-driven strategies. From social media to SEO, we craft campaigns that spark engagement, build loyalty, and drive real growth.",
         types : [
             {
                 id: 1,
@@ -144,7 +147,8 @@ const services = [
     {
         id: 4,
         title: "Web & Digital Experiences",
-        description: 'we design seamless digital experiences that are as intuitive as they are impactful. From engaging websites to interactive platforms, we merge design and technology to create user journeys that connect, convert, and delight.',
+        subtitle: "Where form meets function to drive meaningful user interaction.",
+        description: 'We design seamless digital experiences that are as intuitive as they are impactful. From engaging websites to interactive platforms, we merge design and technology to create user journeys that connect, convert, and delight.',
         types : [
             {
                 id: 1,
@@ -175,7 +179,8 @@ const services = [
     {
         id: 5,
         title: "Performance Marketing and Analytics",
-        description: 'we design seamless digital experiences that are as intuitive as they are impactful. From engaging websites to interactive platforms, we merge design and technology to create user journeys that connect, convert, and delight.',
+        subtitle: "Data-driven strategies that maximize impact and deliver measurable growth.",
+        description: "We combine creativity with precision to drive results. Our performance marketing approach ensures every campaign is optimized for real-world impact—whether it's clicks, conversions, or customer loyalty. With smart analytics, we track what matters and turn insights into action.",
         types : [
             {
                 id: 1,
@@ -201,6 +206,7 @@ const services = [
     {
         id: 6,
         title: "Creative Services",
+        subtitle: "Visual storytelling that inspires, informs, and elevates your brand.",
         description: 'We craft bold, purpose-driven visuals that speak directly to your audience. Whether through striking design, compelling photography, or cinematic videography, our creative work is rooted in clarity, authenticity, and modern aesthetics.',
         types : [
             {
@@ -226,7 +232,8 @@ const services = [
     {
         id: 7,
         title: "Public Relations and Outreach",
-        description: "Shaping perception, building trust, and amplifying your voice. We help you craft the right message and get it in front of the right audience—strategically, authentically, and impactfully. Our PR and outreach services are designed to elevate your brand's visibility while aligning with values that matter to today's consumers.",
+        subtitle: "Shaping perception, building trust, and amplifying your voice.",
+        description: "We help you craft the right message and get it in front of the right audience—strategically, authentically, and impactfully. Our PR and outreach services are designed to elevate your brand's visibility while aligning with values that matter to today's consumers.",
         types : [
             {
                 id: 1,
@@ -251,7 +258,8 @@ const services = [
     {
         id: 8,
         title: "Strategy and Consulting",
-        description: "Purpose-led brand strategies that drive clarity, consistency, and growth. We help brands build strong foundations through insight-driven strategy and expert consulting. Whether you're launching, evolving, or repositioning, we craft brand, marketing, and digital strategies that align with your mission and connect with your audience. Our strategic approach ensures every creative decision is backed by purpose—and built to perform.",
+        subtitle: "Purpose-led brand strategies that drive clarity, consistency, and growth.",
+        description: "We help brands build strong foundations through insight-driven strategy and expert consulting. Whether you're launching, evolving, or repositioning, we craft brand, marketing, and digital strategies that align with your mission and connect with your audience. Our strategic approach ensures every creative decision is backed by purpose—and built to perform.",
         types : [
             {
                 id: 1,
@@ -276,7 +284,8 @@ const services = [
     {
         id: 9,
         title: "Technology Integration",
-        description: "Merging innovation with experience to future-proof your brand. We help brands harness the power of emerging technology to streamline operations, elevate experiences, and unlock smarter engagement. From seamless CRM setups to immersive AR/VR and intelligent AI-driven solutions, we ensure your brand stays ahead—strategically and sustainably.",
+        subtitle: "Merging innovation with experience to future-proof your brand.",
+        description: "We help brands harness the power of emerging technology to streamline operations, elevate experiences, and unlock smarter engagement. From seamless CRM setups to immersive AR/VR and intelligent AI-driven solutions, we ensure your brand stays ahead—strategically and sustainably.",
         types : [
             {
                 id: 1,
@@ -301,7 +310,8 @@ const services = [
     {
         id: 10,
         title: "Sustainability and Social Impact Branding",
-        description: "Authentic Campaigns for a Values-Driven World We craft purpose-driven campaigns that authentically communicate your brand's commitment to environmental sustainability and social responsibility, helping you connect with modern, values-led consumers through impactful storytelling and strategic outreach.",
+        subtitle: "Authentic Campaigns for a Values-Driven World",
+        description: "We craft purpose-driven campaigns that authentically communicate your brand's commitment to environmental sustainability and social responsibility, helping you connect with modern, values-led consumers through impactful storytelling and strategic outreach.",
         types : [
             {
                 id: 1,

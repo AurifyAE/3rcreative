@@ -16,7 +16,7 @@ const AnimatedCircle = () => {
   return (
     <motion.div
       ref={ref}
-      className="w-60 h-60 font-[productSans] font-bold rounded-full bg-[#F4A261] flex items-center justify-center text-white text-xl text-center cursor-pointer"
+      className="w-60 h-60 font-[poppins] font-semibold rounded-full bg-[#F4A261] flex items-center justify-center text-white text-xl text-center cursor-pointer"
       animate={firstAnimate ? { scale: [1, 1.2, 1], x: [0, 10, 0] } : {}}
       whileHover={{ scale: [1, 1.2, 1], x: [0, 10, 0] }}
       transition={{ duration: 1.3, ease: "easeInOut" }}

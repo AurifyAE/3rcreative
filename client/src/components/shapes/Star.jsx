@@ -40,7 +40,7 @@ const Star = () => {
         />
         </motion.svg>
         <motion.div 
-            className="font-[productSans] absolute bottom-36 md:bottom-40 left-1/2 -translate-x-1/2 text-white font-semibold text-base md:text-xl text-center pointer-events-none whitespace-nowrap"
+            className="font-[poppins] absolute bottom-36 md:bottom-40 left-1/2 -translate-x-1/2 text-white font-semibold text-base md:text-lg text-center pointer-events-none whitespace-nowrap"
             animate={{
                 rotate: isHovered ? [0, 45, -45, 0] : 0
             }}

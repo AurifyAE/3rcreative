@@ -22,7 +22,7 @@ const SwingTriangle = () => {
         textAnchor="middle"
         fill="white"
         fontSize="6"
-        fontFamily="Product Sans, sans-serif"
+        fontFamily="Poppins, sans-serif"
       >
         Digital First
       </text>

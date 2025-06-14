@@ -10,7 +10,7 @@ export default function Navbar() {
     const navigate = useNavigate();
 
     return (
-        <div className='fixed top-0 left-0 right-0 z-50 flex justify-between items-center bg-black text-white py-4 px-8 md:px-13 lg:px-26 shadow-2xl border-b-2 border-gray-700'>
+        <div className='fixed top-0 left-0 right-0 z-50 font-[poppins] flex justify-between items-center bg-black text-white py-4 px-8 md:px-13 lg:px-26 shadow-2xl border-b-2 border-gray-700'>
             <Link to="/" >
                 <img src={logo} alt="3r creative logo" className='w-35 md:w-50' />
             </Link>
@@ -40,7 +40,7 @@ export default function Navbar() {
                 <button 
                     onClick={() => {
                         setSelected('services')
-                        navigate('/services')
+                        document.getElementById('services').scrollIntoView({ behavior: 'smooth' })
                     }}
                     className={`w-28 h-8 rounded-2xl transition-colors duration-300 cursor-pointer ${
                         selected === 'services' ? 'bg-[#299D8F]' : 'bg-black'
@@ -51,7 +51,7 @@ export default function Navbar() {
                 <button 
                     onClick={() => {
                         setSelected('chat')
-                        navigate('/contact')
+                        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
                     }}
                     className={`w-28 h-8 rounded-2xl transition-colors duration-300 cursor-pointer ${
                         selected === 'chat' ? 'bg-[#299D8F]' : 'bg-black'
