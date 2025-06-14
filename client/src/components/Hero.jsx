@@ -49,7 +49,7 @@ export default function Hero() {
 
     return (
         <div className='relative w-full overflow-hidden pb-32 md:pb-56'>
-            <img src={hero} alt="hero image" width='100%' />
+            <img src={hero} alt="hero image" className='w-full h-full object-cover' />
             <img src={blurLayer} alt="" className='hidden md:block absolute top-0 z-1 md:h-5/12 lg:h-7/12 md:w-7/12 object-cover overflow-hidden' />
             <img src={arrow} alt="" className='hidden md:block md:absolute top-130 lg:top-120 left-[53%] lg:left-1/2 -translate-x-2/3 -translate-y-1/2 z-20 md:w-25 md:h-25 lg:w-50 lg:h-50' />
             <div className='w-5/6 md:w-5/12 lg:w-2/6 absolute top-40 md:top-40 left-10 md:left-20 lg:left-27 text-white space-y-6 z-[2]'>
